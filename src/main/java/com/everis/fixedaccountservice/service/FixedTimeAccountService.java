@@ -4,12 +4,14 @@ import com.everis.fixedaccountservice.model.FixedTimeAccount;
 import com.everis.fixedaccountservice.repository.FixedTimeAccountRepository;
 import com.everis.fixedaccountservice.utils.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.math.BigDecimal;
 import java.util.Date;
 
+@Service
 public class FixedTimeAccountService {
 
     @Autowired
